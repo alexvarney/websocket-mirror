@@ -18,6 +18,6 @@ app.use(async (ctx: Context) => {
   ctx.response.body = reqBody;
 });
 
-await app.listen({ port: PORT });
+console.log(`Starting server on port ${PORT}`);
 
-console.log(`Server running on port ${PORT}`);
+await app.listen({ port: PORT });
